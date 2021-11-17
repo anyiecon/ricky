@@ -4,26 +4,26 @@ const characteres = document.querySelector('.characteres');
 const person_container = document.querySelector('.person_container');
 
 selet_name.addEventListener('click', new_option);
+new_charact();
 
-new_charact(); 
+
 function new_charact(){
     fetch(URL)
-    .then(response => response.json)
+    .then(response => response.json())
     .then(data => {
-        data.results.map((Element) => {
+        data.results.map((element) => {
             const ide =document.createElement('option');
 
-            ide.value = Element.name;
+            ide.value = element.name;
 
-            ide.textContent= Element.name;
+            ide.textContent= element.name;
 
             selet_name.appendChild(ide);
         })
     })
 }
-
-function new_option(){
-    const name_select = person_container.value;
+ function new_option(){
+    const name_select = selet_name.value;
     fetch(URL)
     .then((response) => response.json())
     .then((data) => {
@@ -38,7 +38,8 @@ function new_option(){
             data.results.map(event =>{
                 if(event.name === name_select){
                     person_container.innerHTML='';
-                    create_card(event)  
+                    create_card(event) 
+                    
                 }
             })
         }
@@ -64,6 +65,8 @@ function create_card(data){
     person_container.appendChild(card);
 
 }
-console.log(new_charact);
+
+
+
 
 

@@ -1,0 +1,61 @@
+.uno{
+  width: 300px;
+  
+}
+.dos{
+  width: 600px;
+}
+header{
+  background-color: black;
+  
+}
+.container_n{
+  margin-top: 70px;
+}
+h3{
+  text-shadow: 3px 1px 3px chartreuse;
+}
+h3{
+  font-size: 3em;
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  display:fixed;
+  color: rgb(255, 255, 255,.1);
+  background-image: url(/imag/fondo1.jpeg);
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 80s linear infinite;
+}
+@keyframes  animate{
+  0%{
+    background-position: left 0px top 10px;
+  }
+  40%{
+    background-position: left 800px top 10px;
+  }
+}
+main{
+  background-color: rgb(236, 230, 231);
+  width: 370px;
+  margin-left: 35%;
+  margin-top: 10px;
+  border-radius: 2em;
+  border: 3px solid darkgreen;
+}
+
+.selet_name{
+  width: 300px;
+  height: 30px;
+  border-radius: 2em;
+  box-shadow: 3px 1px 3px chartreuse;
+}
+footer{
+  background-color: black;
+  color: aliceblue;
+  text-shadow: 3px 1px 3px chartreuse;
+}
+body{
+    text-align: center;
+    background-color: #181616df;
+}
